@@ -6,9 +6,16 @@ int n = int.Parse(input);
 int count = 2;
 Console.Write($"{n} -> ");
 
-while (count < n)
+while (count < n - 1)
 {
     Console.Write($"{count}, ");
     count += 2;
 }
-Console.Write($"{count}");
+if (n >= 2)
+{
+    Console.Write(count);
+}
+else
+{
+    Console.Write("Четных чисел нет");
+}
